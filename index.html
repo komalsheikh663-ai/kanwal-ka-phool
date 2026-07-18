@@ -3,52 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kanwal ka Phool - Smart Protected</title>
+    <title>Kanwal ka Phool</title>
     
     <link rel="preconnect" href="https://drive.google.com">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-8741169014792010" crossorigin="anonymous"></script>
-    
-    <script>
-        // 3. App Open Call (ID: 7976806018) & 4. Smart Error Handling
-        window.onload = function() {
-            try { 
-                (adsbygoogle = window.adsbygoogle || []).push({
-                    google_ad_client: "ca-app-pub-8741169014792010",
-                    enable_page_level_ads: true
-                }); 
-            } catch (e) {}
-            
-            // Smart Bypass: 12 سیکنڈ کا اسمارٹ ویٹ ٹائم
-            setTimeout(() => {
-                const checkElement = document.querySelector('.adsbygoogle');
-                const isHidden = !checkElement || checkElement.innerHTML.replace(/\s/g, "").length === 0;
-                if (isHidden && window.location.protocol !== 'file:') {
-                    document.getElementById('security-alert-screen').style.display = 'block';
-                }
-            }, 12000);
-        };
-    </script>
     
     <style>
-        /* 5. CSS Optimization & Original Sky Blue Theme */
         :root { --main: #87CEEB; --bg: #f0faff; --dark-blue: #0077be; }
-        * { -webkit-user-select: none !important; user-select: none !important; -webkit-touch-callout: none !important; }
+        
+        * { 
+            -webkit-user-select: none !important; 
+            user-select: none !important; 
+            -webkit-touch-callout: none !important; 
+        }
 
         body { 
             font-family: 'Segoe UI', Roboto, sans-serif; 
             text-align: center; background-color: var(--bg); 
             margin: 0; padding: 0; overflow-x: hidden;
             scroll-behavior: smooth;
-        }
-
-        /* 6. Deep Ad Masking: سسٹم کو دھوکہ دینے کے لیے نام تبدیل */
-        .novel-asset-unit { margin: 10px 0; min-height: 1px; background: transparent; overflow: hidden; }
-        .content-buffer-area { margin: 15px 0; min-height: 1px; }
-
-        #security-alert-screen {
-            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 119, 190, 0.98); color: white;
-            z-index: 10000; text-align: center; padding-top: 25%; padding-inline: 20px;
         }
 
         .app-header { background: white; padding: 15px 10px; border-bottom: 3px solid var(--main); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
@@ -62,7 +34,7 @@
             border-left: 6px solid var(--main); border-right: 6px solid var(--main);
         }
 
-        .grid-container { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 0 15px; margin-top: 20px; }
+        .grid-container { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 0 15px; margin-top: 20px; margin-bottom: 30px; }
         .p-btn { 
             background: var(--main); color: #fff; border: none;
             padding: 16px; border-radius: 8px; font-weight: bold;
@@ -70,32 +42,20 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
         }
 
-        /* 7. Protection: Security Shield & 8. Caching */
         .novel-container { position: relative; width: 100%; height: 85vh; display: none; border-top: 2px solid var(--main); background: #f0f0f0; margin-top: 5px; overflow: hidden; }
         .security-overlay { position: absolute; top: 0; right: 0; width: 100%; height: 65px; background: transparent; z-index: 9999; }
 
-        iframe { width: 100%; height: 100%; border: none; }
-        .loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 4px solid #ddd; border-top: 4px solid var(--main); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; }
+        iframe { width: 100%; height: 100%; border: none; position: relative; z-index: 1; }
+        .loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 4px solid #ddd; border-top: 4px solid var(--main); border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; z-index: 150; }
         @keyframes spin { 0% { transform: translate(-50%, -50%) rotate(0deg); } 100% { transform: translate(-50%, -50%) rotate(360deg); } }
     </style>
 </head>
 
 <body oncontextmenu="return false">
 
-    <div id="security-alert-screen">
-        <h2>سیکیورٹی الرٹ! ⚠️</h2>
-        <p>ناول لوڈ ہونے میں دیر ہو رہی ہے۔ براہ کرم انٹرنیٹ چیک کریں یا ایڈ بلاکر بند کر کے ریفریش کریں۔</p>
-        <button onclick="location.reload()" style="background:white; color:var(--dark-blue); padding:10px 20px; border:none; border-radius:5px; font-weight:bold;">ریفریش کریں</button>
-    </div>
-
     <div class="app-header">
         <h1 class="app-title">Kanwal ka Phool</h1>
         <div class="app-sub">By Husny Kanwal</div>
-    </div>
-
-    <div class="novel-asset-unit">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-app-pub-8741169014792010" data-ad-slot="4716217857" data-ad-format="banner"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
     <div class="info-card">
@@ -104,11 +64,6 @@
     </div>
 
     <div class="grid-container">
-        <div class="content-buffer-area">
-            <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-app-pub-8741169014792010" data-ad-slot="6705054543"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
         <button class="p-btn" onclick="secureOpen('1wRPvXgXj1CEwOD6ZD7Qq0diI4137v6TB')">Read Complete Novel</button>
     </div>
 
@@ -119,20 +74,20 @@
     </div>
 
     <script>
-        // 10. Interstitial Trigger (ID: 3619726203) & Smart Opening
         function secureOpen(id) {
-            try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) { }
             const area = document.getElementById('viewArea');
             const frame = document.getElementById('novelFrame');
+            
             area.style.display = 'block';
             document.getElementById('loadingIcon').style.display = 'block';
             frame.src = `https://drive.google.com/file/d/${id}/preview`;
+            
             setTimeout(() => { area.scrollIntoView({ behavior: 'smooth' }); }, 300);
         }
         
-        // Final Security Guards
         document.addEventListener('keydown', e => { 
             if (e.ctrlKey && ['c','u','s','p','a'].includes(e.key)) e.preventDefault(); 
+            if (e.keyCode == 123) e.preventDefault();
         });
     </script>
 </body>
